@@ -1,5 +1,4 @@
 class PoliticiansController < ApplicationController
-
   def index
     @politicians = Politician.all
   end
@@ -7,6 +6,5 @@ class PoliticiansController < ApplicationController
   def show
     @politician = Politician.find(params[:id])
   end
-
 
 end
