@@ -10,7 +10,7 @@ puts 'Creating politicians....'
 Politician.create(
   full_name: 'Donald Trump',
   age: 75,
-  biography: 'From beign the son of a real estate mogul, to the White House. Remembered as a psychopath, a narcissist and a sex offender, to name but a few. I think if this country gets any kinder or gentler, it is literally going to cease to exist.',
+  biography: 'From being the son of a real estate mogul, to the White House. Remembered as a psychopath, a narcissist and a sex offender, to name but a few. I think if this country gets any kinder or gentler, it is literally going to cease to exist.',
   expertise: 'Make America Great Never',
   skills: 'Bribing, Stealing',
   reach: 'International',
@@ -36,7 +36,7 @@ Politician.create(
   expertise: 'We cannot keep flirting with communism and socialism.',
   skills: 'Dictatorship, Not a gravedigger, Supreme tactician',
   reach: 'South America',
-  location: 'Moscow, Brasil',
+  location: 'Brasilia, Brasil',
   price: 100
   )
 
@@ -45,9 +45,9 @@ Politician.create(
   age: 67,
   biography: 'Trained as a quantum chemist and elected chancellor in 2005, Merkel is the first woman and the first East German to hold her nation’s highest elective office. It is know by many as the woman who save the dignity of Europe.',
   expertise: 'Rock-solid leader.',
-  skills: 'Someone who does not flich, Extraordinary influence, Master lead',
+  skills: 'Someone who does not flinch, Extraordinary influence, Master lead',
   reach: 'Europe',
-  location: 'Hamburg, Germany',
+  location: 'Berlin, Germany',
   price: 7000
   )
 
@@ -56,9 +56,9 @@ Politician.create(
   age: 85,
   biography: 'Silvio has been a dominant figure in Italian politics for the past 17 years, wiht his major achievements being repeated gaffes and scandals. He has been the object of at least 23 judicial investigations, mostly corruption.',
   expertise: 'Great manipulator.',
-  skills: 'Super-salesman, Tax evasion , Bribe lawyer',
+  skills: 'Super salesman, Tax evasion , Bribe lawyer',
   reach: 'Europe',
-  location: 'Hamburg, Germany',
+  location: 'Rome, Italy',
   price: 10
   )
 
@@ -69,7 +69,7 @@ Politician.create(
   expertise: 'Making the world s tallest building.',
   skills: 'Entrepreneurship, Public relations, Visionary',
   reach: 'Western Asia',
-  location: 'UAE',
+  location: 'Dubai, UAE',
   price: 7000
   )
 
@@ -78,9 +78,9 @@ Politician.create(
   age: 39,
   biography: 'His Highness Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, Crown Prince of Dubai, has established a reputation as a leader that combines unique leadership abilities with humility, simplicity and generosity that has earned him a prominent place in the hearts of citizens and expatriates alike.',
   expertise: 'Owning a bunch of football teams.',
-  skills: 'Financial managment, Investing, Visionary',
+  skills: 'Financial management, Investing, Visionary',
   reach: 'Western Asia',
-  location: 'UAE',
+  location: 'Dubai, UAE',
   price: 5000
   )
 
@@ -91,6 +91,6 @@ Politician.create(
   expertise: 'Outstanding leadership.',
   skills: 'Honesty, Agility, Empathy',
   reach: 'South Pacific Ocean',
-  location: 'New Zealand',
+  location: 'Wellington, New Zealand',
   price: 500
   )
