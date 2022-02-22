@@ -1,0 +1,8 @@
+<div class="container mt-4">
+  <h1>Hobby Lobby</h1>
+
+  <% @politicians.each do |politician| %>
+  <br><%= link_to politician.name, politician %>
+  <% end %>
+  <br>
+</div>
