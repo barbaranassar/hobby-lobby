@@ -1,12 +1,39 @@
 .navbar-lewagon {
   justify-content: space-between;
   background: white;
+  padding: 0.6rem 0;
 }
 
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-lewagon .navbar-brand {
+  color: #333333;
+  font-weight: bold;
+}
+
+.btn-gray-light {
+  background-color: #EEEEEE;
+  border: none;
+  color: #333333;
+  padding: 0.5rem 4rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
+@media screen and (min-width: 576px) {
+  .nav-item {
+    margin: 0 1rem;
+  }
+
+  .navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .container-fluid {
+    width: 85%;
+  }
 }
