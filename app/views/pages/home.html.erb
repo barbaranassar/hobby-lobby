@@ -1,2 +1,43 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://serving.photos.photobox.com/529102750050c55143df172e466378ca9ccdf9364654f324a9a607b72bae3ad21e6e6439.jpg)">
+  <div class="container mt-4" ><h1><strong>Hobby Lobby</strong></h1>
+  <p>Are you looking for someone who can forward your endeavours to gain more power + you are absolutely free of any moral concerns? Find the perfect <strong>politician</strong> to ruthlessly crush your enemies through legal policies and reckless sanctioning!</p>
+
+
+    <div class="col-6">
+      <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
+        <%= f.input :name, input_html: {value: ""} %>
+        <%= f.submit "Search!", class: "btn btn-dark" %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="container mt-3 mb-3">
+  <div class="row">
+  <div class="col">Test Card</div>
+  <div class="col">Test Card</div>
+  <div class="col">Test Card</div>
+  </div>
+</div>
+
+<div class="row">
+<div id="boris" class="container col-6" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://serving.photos.photobox.com/66040404c960454241e5ccf9391b13227b174aa3d3c69d98feb2d8c5634afbf9a9980709.jpg)">
+</div>
+<div class="container col-6">
+  <h2>Register now to start your bribing journey!</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate interdum nisl in molestie. Phasellus elementum convallis euismod. Praesent ut rutrum sem. Vivamus vulputate nulla nisl. Sed fringilla neque at ultrices luctus. </p>
+  <%= link_to "Sign up", new_user_registration_path, class: "btn btn-dark" %>
+</div>
+</div>
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-linkedin"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
+</div>
