@@ -6,7 +6,7 @@ class CreatePoliticians < ActiveRecord::Migration[6.1]
       t.text :biography
       t.string :expertise
       t.string :skills
-      t.integer :reach
+      t.string :reach
       t.string :location
       t.integer :price
 
