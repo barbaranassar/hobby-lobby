@@ -13,16 +13,6 @@
   font-weight: bold;
 }
 
-.btn-gray-light {
-  background-color: #EEEEEE;
-  border: none;
-  color: #333333;
-  padding: 0.5rem 4rem;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 12px;
-}
-
 @media screen and (min-width: 576px) {
   .nav-item {
     margin: 0 1rem;
@@ -35,5 +25,15 @@
 
   .container-fluid {
     width: 85%;
+  }
+
+  .btn-gray-light {
+    background-color: #EEEEEE;
+    border: none;
+    color: #333333;
+    padding: 0.5rem 4rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12px;
   }
 }
