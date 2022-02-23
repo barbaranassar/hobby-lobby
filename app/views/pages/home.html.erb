@@ -1,16 +1,19 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://serving.photos.photobox.com/529102750050c55143df172e466378ca9ccdf9364654f324a9a607b72bae3ad21e6e6439.jpg)">
-  <div class="container mt-4" ><h1><strong>Hobby Lobby</strong></h1>
-  <p>Are you looking for someone who can forward your endeavours to gain more power + you are absolutely free of any moral concerns? Find the perfect <strong>politician</strong> to ruthlessly crush your enemies through legal policies and reckless sanctioning!</p>
-
+  <div class="container mt-4" >
+    <h1><strong>Hobby Lobby</strong></h1>
+    <p>Are you looking for someone who can forward your endeavours to gain more power + you are absolutely free of any moral concerns? Find the perfect <strong>politician</strong> to ruthlessly crush your enemies through legal policies and reckless sanctioning!</p>
 
     <div class="col-6">
+
       <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-        <%= f.input :name, input_html: {value: ""} %>
+        <%= f.input :location, input_html: {value: ""} %>
         <%= f.submit "Search!", class: "btn btn-dark" %>
       <% end %>
+
     </div>
   </div>
 </div>
+
 
 <div class="container mt-3 mb-3">
   <div class="row">
@@ -20,12 +23,13 @@
   </div>
 </div>
 
+
 <div class="row">
-<div id="boris" class="container col-6" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://serving.photos.photobox.com/66040404c960454241e5ccf9391b13227b174aa3d3c69d98feb2d8c5634afbf9a9980709.jpg)">
-</div>
-<div class="container col-6">
-  <h2>Register now to start your bribing journey!</h2>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate interdum nisl in molestie. Phasellus elementum convallis euismod. Praesent ut rutrum sem. Vivamus vulputate nulla nisl. Sed fringilla neque at ultrices luctus. </p>
-  <%= link_to "Sign up", new_user_registration_path, class: "btn btn-dark" %>
-</div>
+    <div id="register-background" class="col-12 col-md-6" style="background-image: url(https://images.unsplash.com/photo-1568378814482-f3c60866fc6b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1676&q=80)">
+    </div>
+  <div class="col-12 col-md-6 box">
+      <h2>Register now to start your bribing journey!</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate interdum nisl in molestie. Phasellus elementum convallis euismod. Praesent ut rutrum sem. Vivamus vulputate nulla nisl. Sed fringilla neque at ultrices luctus. </p>
+      <%= link_to "Sign up now", new_user_registration_path, class: "btn-gray" %>
+  </div>
 </div>
