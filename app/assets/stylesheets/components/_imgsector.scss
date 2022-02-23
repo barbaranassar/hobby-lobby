@@ -1,0 +1,26 @@
+.imgsector-background {
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+
+.box {
+  padding: 2rem ;
+  // TODO: center in mobile
+}
+
+.box p {
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 768px) {
+  .imgsector-background {
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    height: auto;
+  }
+
+  .box {
+    padding: 3rem 12% 3rem 5rem;
+  }
+}
