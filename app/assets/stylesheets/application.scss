@@ -12,10 +12,19 @@
 @import "components/index";
 @import "pages/index";
 
+.body {
+  background-color: #fff !important;
+}
 
 h2 {
   color: #212121;
   font-weight: 700;
+}
+
+h3 {
+  color: #212121;
+  // font-weight: 700;
+  font-size: 1.3rem;
 }
 
 p {
@@ -27,5 +36,5 @@ p {
 }
 
 .section {
-  padding: 2rem 10%;
+  padding: 2rem 10% 2rem 8%;
 }
