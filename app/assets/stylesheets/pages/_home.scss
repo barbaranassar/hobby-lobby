@@ -1,1 +1,53 @@
 // Specific CSS for your home-page
+.banner {
+  background-size: cover;
+  background-position: center;
+  padding: 150px 0;
+}
+
+.banner h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.banner p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+
+
+#register-background {
+  background-size: cover;
+  background-position: center;
+  height: 20rem;
+}
+
+.box {
+  padding: 2rem ;
+  // TODO: center in mobile
+}
+
+.box p {
+  padding: 1rem 0;
+}
+
+
+@media screen and (min-width: 768px) {
+  #register-background {
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    height: auto;
+  }
+
+  .box {
+    padding: 3rem 12% 3rem 5rem;
+  }
+}
