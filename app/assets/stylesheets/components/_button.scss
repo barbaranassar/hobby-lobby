@@ -1,6 +1,5 @@
 .btn-gray {
   background-color: #444444;
-  border: none;
   color: white;
   padding: 10px 50px;
   text-align: center;
@@ -14,4 +13,22 @@
 .btn-gray:hover {
   background-color: #fff;
   color: #444444;
+}
+
+
+.btn-border-gray {
+  background-color: #fff;
+  color: #444444;
+  padding: 10px 40px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #444444;
+  border-radius: 20px;
+  transition: 0.3s;
+  margin: 0 2rem 0 0;
+}
+
+.btn-border-gray:hover {
+  background-color: #444444;
+  color: #fff;
 }
