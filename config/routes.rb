@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
+  get "/pages/congratulations", to: "pages#index", as: :congratulations
   resources :politicians, only: [:index, :show] do
     resources :availabilities, only: [:show]
   end
