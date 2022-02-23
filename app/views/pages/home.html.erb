@@ -1,35 +1,20 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://serving.photos.photobox.com/529102750050c55143df172e466378ca9ccdf9364654f324a9a607b72bae3ad21e6e6439.jpg)">
-<<<<<<< HEAD
-  <div class="container mt-4" ><h1><strong>Hobby Lobby</strong></h1>
-  <p>Are you looking for someone who can forward your endeavours to gain more power + you can absolutely not bother with moral concerns? Find the perfect <strong>politician</strong> to ruthlessly crush your enemies through legal policies and reckless sanctioning!</p>
-
-
-    <div class="row"><div class="col-8">
-      <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-        <%= f.input :name, input_html: {value: ""} %><%= f.submit "Search!", class: "btn btn-dark" %>
-=======
   <div class="container mt-4" >
-    <h1><strong>Hobby Lobby</strong></h1>
+    <h1>Hobby Lobby</h1>
     <p>Are you looking for someone who can forward your endeavours to gain more power + you are absolutely free of any moral concerns? Find the perfect <strong>politician</strong> to ruthlessly crush your enemies through legal policies and reckless sanctioning!</p>
 
-    <div class="col-6">
-
+    <%= link_to "Look for politicians", politicians_path, class: "btn-gray" %>
+    <%# <div class="col-6">
       <%= simple_form_for :search, url: root_path, method: "GET", html: { class: 'form-inline' } do |f| %>
-        <%= f.input :location, input_html: {value: ""} %>
-        <%= f.submit "Search!", class: "btn btn-dark" %>
->>>>>>> 29457bf07d0fd727d0de56ac221ad9f4d86e517f
-      <% end %>
+        <%# <%= f.input :location, input_html: {value: ""} %>
+        <%# <%= f.submit "Search!", class: "btn btn-dark" %>
+      <%# <% end %>
+    <%# </div> %>
 
-    </div>
-    </div>
   </div>
 </div>
 
-<<<<<<< HEAD
-  <br>
-=======
 
->>>>>>> 29457bf07d0fd727d0de56ac221ad9f4d86e517f
 <div class="container mt-3 mb-3">
   <div class="row text-center">
   <div class="col"><strong>Find your favourite politician</strong></div>
