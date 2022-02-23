@@ -4,4 +4,10 @@ class ApplicationController < ActionController::Base
   def configure_permitted_parameters
     devise_parameter_sanitizer.permit(:sign_up, keys: [:full_name, :organization_name, :sector, :location])
   end
+
+  private
+
+  def set_time_zone
+    Time.zone = current_user.time_zone
+  end
 end

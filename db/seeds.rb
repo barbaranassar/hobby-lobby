@@ -5,9 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+puts "Destroy everything"
+Politician.destroy_all
+Availability.destroy_all
+puts "All is destroyed!"
 
 puts 'Creating politicians....'
-Politician.create(
+trump = Politician.create(
   full_name: 'Donald Trump',
   age: 75,
   biography: 'From being the son of a real estate mogul, to the White House. Remembered as a psychopath, a narcissist and a sex offender, to name but a few. I think if this country gets any kinder or gentler, it is literally going to cease to exist.',
@@ -16,9 +20,15 @@ Politician.create(
   reach: 'International',
   location: 'Florida, US',
   price: 50
-  )
+)
 
-Politician.create(
+Availability.create(
+  start_time: '2022-6-1',
+  end_time: '2022-10-3',
+  politician: trump
+)
+
+putin = Politician.create(
   full_name: 'Vladimir Putin',
   age: 69,
   biography: 'Russian President Vladimir Putin has managed to wage a global charm offensive, even while supporting a number of actions that have drawn world criticism, including sponsored assassination, hacking of web sites in western Europe, and election interference.',
@@ -27,9 +37,15 @@ Politician.create(
   reach: 'International',
   location: 'Moscow, Russia',
   price: 5000
-  )
+)
 
-Politician.create(
+Availability.create(
+  start_time: '2022-2-28',
+  end_time: '2022-8-30',
+  politician: putin
+)
+
+bolsonaro = Politician.create(
   full_name: 'Jair Bolsonaro',
   age: 66,
   biography: 'I have just taken a blood exam. I was a bit weak yesterday. They have also found a bit of an infection. I am taking antibiotics now. It must have been those 20 days inside the house, we catch other things. I have caught mold, mold in my lungs. It must be that.',
@@ -37,10 +53,16 @@ Politician.create(
   skills: 'Dictatorship, Not a gravedigger, Supreme tactician',
   reach: 'South America',
   location: 'Brasilia, Brasil',
-  price: 100
-  )
+  price: 100,
+)
 
-Politician.create(
+Availability.create(
+  start_time: '2022-2-14',
+  end_time: '2022-7-5',
+  politician: bolsonaro
+)
+
+merkel = Politician.create(
   full_name: 'Angela Merkel',
   age: 67,
   biography: 'Trained as a quantum chemist and elected chancellor in 2005, Merkel is the first woman and the first East German to hold her nation’s highest elective office. It is know by many as the woman who save the dignity of Europe.',
@@ -49,9 +71,15 @@ Politician.create(
   reach: 'Europe',
   location: 'Berlin, Germany',
   price: 7000
-  )
+)
 
-Politician.create(
+Availability.create(
+  start_time: '2022-6-1',
+  end_time: '2022-12-12',
+  politician: merkel
+)
+
+berlusconi = Politician.create(
   full_name: 'Silvio Berlusconi',
   age: 85,
   biography: 'Silvio has been a dominant figure in Italian politics for the past 17 years, wiht his major achievements being repeated gaffes and scandals. He has been the object of at least 23 judicial investigations, mostly corruption.',
@@ -60,9 +88,15 @@ Politician.create(
   reach: 'Europe',
   location: 'Rome, Italy',
   price: 10
-  )
+)
 
-Politician.create(
+Availability.create(
+  start_time: '2022-1-1',
+  end_time: '2022-8-8',
+  politician: berlusconi
+)
+
+rashid = Politician.create(
   full_name: 'Mohammed bin Rashid Al Maktoum',
   age: 72,
   biography: 'Sheikh Mohammed bin Rashid Al Maktoum is the Vice President and Prime Minister of the United Arab Emirates, its Minister of Defence, as well as the Ruler of the Emirate of Dubai. He succeeded his brother Maktoum bin Rashid Al Maktoum as ruler in 2006 after his death.',
@@ -71,9 +105,15 @@ Politician.create(
   reach: 'Western Asia',
   location: 'Dubai, UAE',
   price: 7000
-  )
+)
 
-Politician.create(
+Availability.create(
+  start_time: '2022-4-1',
+  end_time: '2022-7-30',
+  politician: rashid
+)
+
+mohammed = Politician.create(
   full_name: 'Hamdan bin Mohammed Al Maktoum',
   age: 39,
   biography: 'His Highness Sheikh Hamdan bin Mohammed bin Rashid Al Maktoum, Crown Prince of Dubai, has established a reputation as a leader that combines unique leadership abilities with humility, simplicity and generosity that has earned him a prominent place in the hearts of citizens and expatriates alike.',
@@ -82,9 +122,15 @@ Politician.create(
   reach: 'Western Asia',
   location: 'Dubai, UAE',
   price: 5000
-  )
+)
 
-Politician.create(
+Availability.create(
+  start_time: '2022-1-1',
+  end_time: '2022-12-11',
+  politician: mohammed
+)
+
+arden = Politician.create(
   full_name: 'Jacinda Arden',
   age: 41,
   biography: "She was sworn in by the Governor-General on 26 October 2017. She became the world's youngest female head of government at age 37. Ardern gave birth to her daughter Neve on 21 June 2018, making her the world's second elected head of government to give birth while in office (after Benazir Bhutto).",
@@ -93,4 +139,12 @@ Politician.create(
   reach: 'South Pacific Ocean',
   location: 'Wellington, New Zealand',
   price: 500
-  )
+)
+
+Availability.create(
+  start_time: '2022-1-15',
+  end_time: '2022-10-3',
+  politician: arden
+)
+
+  puts "All is created!"
