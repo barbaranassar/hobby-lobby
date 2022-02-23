@@ -1,0 +1,17 @@
+<div class="container mt-4">
+  <br>
+  <h1><%= @politician.full_name %></h1>
+  <br>
+
+
+<div class="row text-align">
+  <div class="col-6">
+  <p >Pick a start date</p>
+  <input type="date" data-provide='datepicker' >
+  </div>
+  <div class="col-6">
+  <p>Pick an date</p>
+  <input type="date" data-provide='datepicker' >
+  <%= link_to "Book now!", politicians_path, class: "btn btn-dark" %>
+  </div>
+</div>
