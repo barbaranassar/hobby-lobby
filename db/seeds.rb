@@ -20,6 +20,7 @@ trump = Politician.create(
   reach: 'International',
   location: 'Florida, US',
   price: 50
+  photo_url: 'https://www.merkur.de/bilder/2022/02/23/91366621/28300681-donald-trump-rfe.jpg'
 )
 
 Availability.create(
@@ -37,6 +38,7 @@ putin = Politician.create(
   reach: 'International',
   location: 'Moscow, Russia',
   price: 5000
+  photo_url: 'https://cdn-japantimes.com/wp-content/uploads/2021/12/np_file_130786.jpeg'
 )
 
 Availability.create(
@@ -54,6 +56,7 @@ bolsonaro = Politician.create(
   reach: 'South America',
   location: 'Brasilia, Brasil',
   price: 100,
+  photo_url: 'https://www.rnd.de/resizer/kjIvnG2kvX_LRSdjKrzUPofPgdc=/1441x811/filters:quality(70)/cloudfront-eu-central-1.images.arcpublishing.com/madsack/KQJII62G6BGYFLRM66JGZLJGK4.jpeg'
 )
 
 Availability.create(
@@ -71,6 +74,7 @@ merkel = Politician.create(
   reach: 'Europe',
   location: 'Berlin, Germany',
   price: 7000
+  photo_url: 'https://media0.faz.net/ppmedia/aktuell/gesellschaft/2487125949/1.7823408/mmobject-still_full/die-frau-die-immer-recht-hatte.jpg'
 )
 
 Availability.create(
@@ -88,6 +92,7 @@ berlusconi = Politician.create(
   reach: 'Europe',
   location: 'Rome, Italy',
   price: 10
+  photo_url: 'https://image.stern.de/31561508/t/hS/v2/w1440/r1.7778/-/22--italiens-exregierungschef-silvio-berlusconi---f1de643d65ea9fbe.jpg'
 )
 
 Availability.create(
@@ -105,6 +110,7 @@ rashid = Politician.create(
   reach: 'Western Asia',
   location: 'Dubai, UAE',
   price: 7000
+  photo_url: 'https://idsb.tmgrup.com.tr/ly/uploads/images/2020/03/05/23838.jpg'
 )
 
 Availability.create(
@@ -122,6 +128,7 @@ mohammed = Politician.create(
   reach: 'Western Asia',
   location: 'Dubai, UAE',
   price: 5000
+  photo_url: 'https://en.qantara.de/sites/default/files/uploads/2016/06/29/dubaiskronprinzhamdanbinmuhammadalmaktum.jpg'
 )
 
 Availability.create(
@@ -139,6 +146,7 @@ arden = Politician.create(
   reach: 'South Pacific Ocean',
   location: 'Wellington, New Zealand',
   price: 500
+  photo_url: 'https://assets.deutschlandfunk.de/FILE_c192631a9d856b505405791e5eba915a/1280x720.jpg?t=1603448265960'
 )
 
 Availability.create(
