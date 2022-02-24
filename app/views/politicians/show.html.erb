@@ -27,7 +27,7 @@
 
       <div>
         <h6>Total price: €<%= @politician.price %></h6>
-        <%= link_to "Rent now", congratulations_path, class: "btn-gray" %>
+        <%= link_to "Rent now", new_politician_booking_path(@politician), class: "btn-gray" %>
       </div>
     </div>
 

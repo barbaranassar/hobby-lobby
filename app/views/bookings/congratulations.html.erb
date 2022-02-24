@@ -1,0 +1,30 @@
+<%= link_to "Go back to main page", root_path, class: "btn-gray-square" %>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+    <h1><strong>Congratulations! You're booking for <%= @politician.full_name %> is confirmed! </strong></h1>
+    <h3>Start date:</h3>
+    <p><%= @booking.start_date.strftime("%m.%d.%Y") %></p>
+    <h3>End date:</h3>
+    <p><%= @booking.end_date.strftime("%m.%d.%Y") %></p>
+    <h3>Details about the deal</h3>
+    <p><%= @booking.topic %></p>
+<br>
+    <h2>All of your bookings</h2>
+  <ol>
+    <% current_user.bookings.each do |booking| %>
+    <li>
+      <p><%= booking.politician.full_name %></p>
+      <% days = booking.end_date - booking.start_date %>
+      <p>In total<strong> <%= duration = (days / 24 / 60 / 60).to_i %> </strong>days from <em><%= booking.start_date.strftime("%m.%d.%Y") %> </em>until <em><%= booking.end_date.strftime("%m.%d.%Y") %></em></p>
+      <p><strong>What will be dealt with:</strong> <%= booking.topic %></p>
+      <p>Total cost: <strong><%= @politician.price * duration %>,- € </strong></p>
+    </li>
+    <% end %>
+  </ol>
+    </div>
+  </div>
+
+</div>
+  <%= link_to "Go back to main page", root_path, class: "btn-gray-square" %>
