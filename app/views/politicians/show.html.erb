@@ -1,17 +1,39 @@
-<div class="container mt-4">
-  <br>
-  <h1><%= @politician.full_name %></h1>
-  <br>
 
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <div>
+        <p>
+        save it for later
+        </p>
+      </div>
 
-<div class="row text-align">
-  <div class="col-6">
-  <p >Pick a start date</p>
-  <input type="date" data-provide='datepicker' >
+      <div>
+        <h2><%= @politician.full_name %></h2>
+
+        <p><%= @politician.biography %></p>
+      </div>
+
+      <div class="d-flex justify-content-between" >
+        <div>
+          <h6><b>Age: </b><%= @politician.age %></h6>
+          <h6><b>Location: </b> <%= @politician.location %></h6>
+        </div>
+        <div>
+          <h6><b>Reach: </b><%= @politician.reach %> </h6>
+          <h6><b>Skills: </b> <%= @politician.skills %></h6>
+        </div>
+      </div>
+
+      <div>
+        <h6>Total price: €<%= @politician.price %></h6>
+        <%= link_to "Rent now", congratulations_path, class: "btn-gray" %>
+      </div>
+    </div>
+
+    <div class="col-6">
+      <%= image_tag "AMerkel.jpeg", alt: "Politician picture", width: 500 %>
+    </div>
   </div>
-  <div class="col-6">
-  <p>Pick an date</p>
-  <input type="date" data-provide='datepicker' >
-  <%= link_to "Book now!", congratulations_path, class: "btn btn-dark" %>
-  </div>
+
 </div>
