@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 2022_02_24_145049) do
+=======
+
+ActiveRecord::Schema.define(version: 2022_02_24_145049) do
+
+>>>>>>> cca981ed2a533719cac8c26426d66b0739b77baf
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -114,8 +120,11 @@ ActiveRecord::Schema.define(version: 2022_02_24_145049) do
   add_foreign_key "bookings", "politicians"
   add_foreign_key "bookings", "users"
   add_foreign_key "bookmarks", "politicians"
+
   add_foreign_key "bookmarks", "users"
+
   add_foreign_key "politicians", "bookings"
+
   add_foreign_key "ratings", "bookings"
   add_foreign_key "ratings", "politicians"
   add_foreign_key "ratings", "users"
