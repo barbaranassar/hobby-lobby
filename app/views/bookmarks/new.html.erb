@@ -1,5 +1,5 @@
 <div class="container"><h1>New Bookmark</h1>
-<%= simple_form_for [@politician, @bookmark] do |t| %>
+<%= simple_form_for [@user, @bookmark] do |t| %>
 <%= t.submit %>
 <% end %>
 <%= link_to "Go back to all politicians", politicians_path, class: "btn btn-dark" %>

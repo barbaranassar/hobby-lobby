@@ -69,3 +69,8 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Calendar Gem from James
 
 gem 'bootstrap-datepicker-rails'
+
+
+# Map
+
+gem "geocoder"

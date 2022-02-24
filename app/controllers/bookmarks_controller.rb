@@ -5,15 +5,15 @@ class BookmarksController < ApplicationController
   def new
     @user = current_user
     @bookmark = Bookmark.new
-    @politician = Politician.find(params[:politician_id])
+    @politician = Politician.find(params[:user_id])
   end
 
   def create
-    @user = current_user
-    @user.bookmark = Bookmark.new
+    @bookmark = Bookmark.new
     @politician = Politician.find(params[:politician_id])
-    @user.bookmark.politician_id = @politician.id
-    @user.bookmark.save
+    @bookmark.politician = @politician
+    @bookmark.user = current_user
+    @bookmark.save
     redirect_to politicians_path
 
   end
