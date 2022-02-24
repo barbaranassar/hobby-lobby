@@ -38,3 +38,12 @@ p {
 .section {
   padding: 2rem 10% 2rem 8%;
 }
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 5rem;    /* Footer height */
+}
