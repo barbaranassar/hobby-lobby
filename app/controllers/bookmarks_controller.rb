@@ -3,9 +3,11 @@ class BookmarksController < ApplicationController
     @bookmarks = @user.bookmarks
   end
   def new
+    raise
     @user = current_user
     @bookmark = Bookmark.new
     @politician = Politician.find(params[:user_id])
+    create
   end
 
   def create
