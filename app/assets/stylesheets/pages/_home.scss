@@ -2,22 +2,28 @@
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 150px 0;
+  padding: 4rem 40rem 4rem 3rem;
 }
 
 .banner h1 {
-  margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+  color: #212121;
   font-size: 50px;
   font-weight: bold;
 }
 
 .banner p {
-  font-size: 20px;
-  color: white;
-  opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  margin-bottom: 1rem;
+  font-size: 17px;
+  color: #313131;
+}
+
+.section {
+  margin: 2rem 0;
+}
+
+.box-text {
+  padding-right: 2rem;
 }
 
 #register-background {
