@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   devise_for :users
+  resources :users do
+    resources :bookmarks, only: [:index, :show, :new, :create, :destroy]
+  end
   root to: 'pages#home'
   get "/dashboard", to: "pages#dashboard"
   resources :politicians, only: [:index, :show] do
