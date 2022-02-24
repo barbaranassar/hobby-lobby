@@ -5,9 +5,12 @@
   <div class="col-12 col-md-6 box">
       <h2>Are you looking for something special?</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate interdum nisl in molestie. Phasellus elementum convallis euismod. Praesent ut rutrum sem. Vivamus vulputate nulla nisl. Sed fringilla neque at ultrices luctus. </p>
-      <%= link_to "Price", new_user_registration_path, class: "btn-border-gray" %>
-      <%= link_to "Age", new_user_registration_path, class: "btn-border-gray" %>
-      <%= link_to "Skills", new_user_registration_path, class: "btn-border-gray" %>
+      <div class="d-flex flex-wrap justify-content-start">
+
+        <%= link_to "Price", politicians_path(filter: "price"), class: "btn-border-gray" %>
+        <%= link_to "Age", politicians_path(filter: "age"), class: "btn-border-gray" %>
+        <%= link_to "Location", politicians_path(filter: "location"), class: "btn-border-gray" %>
+      </div>
   </div>
 </div>
 
@@ -18,68 +21,22 @@
 
       <div class="col-12 col-md-4 mb-3">
 
-        <div class="card-trip">
-          <img src="https://www.merkur.de/bilder/2022/02/23/91366621/28300681-donald-trump-rfe.jpg" />
-          <div class="card-trip-infos">
-            <div>
-              <h2><%= link_to politician.full_name, politician_path(1) %></h2>
-              <p><strong>Expertise:</strong> <%= politician.expertise %></p>
+          <div class="card-trip">
+            <%= image_tag politician.photo_url %>
+            <div class="card-trip-infos">
+              <div>
+                <h2><%= link_to politician.full_name, politician %></h2>
+                <p><strong>Location:</strong> <%= politician.location %></p>
+              </div>
+              <div class="card-trip-pricing">
+                <h2>€ <%= politician.price %>,00</h2>
+                <p>per day</p>
+              </div>
             </div>
-            <h2 class="card-trip-pricing">€ 99.99</h2>
           </div>
-        </div>
 
       </div>
     <% end %>
-
-  </div>
-</div>
-
-
-<div class="section mt-4 ">
-  <div class="row">
-    <div class="col-12 col-md-4 mb-3">
-
-      <div class="card-trip">
-        <img src="https://www.merkur.de/bilder/2022/02/23/91366621/28300681-donald-trump-rfe.jpg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2><%= link_to "Donald Trump", politician_path(1) %></h2>
-            <p>Make America Great Never!</p>
-          </div>
-          <h2 class="card-trip-pricing">€ 99.99</h2>
-        </div>
-      </div>
-
-    </div>
-    <div class="col-12 col-md-4">
-
-      <div class="card-trip">
-        <img src="https://m.faz.net/media0/ppmedia/aktuell/gesellschaft/2487125949/1.7823408/mmobject-still_full/die-frau-die-immer-recht-hatte.jpg" />
-        <div class="card-trip-infos">
-          <div>
-           <h2><%= link_to "Angela Merkel", politician_path(6) %></h2>
-            <p>Rock-solid leader</p>
-          </div>
-          <h2 class="card-trip-pricing">€ 99.99</h2>
-        </div>
-      </div>
-
-    </div>
-    <div class="col">
-
-      <div class="card-trip">
-        <img src="https://cdn-japantimes.com/wp-content/uploads/2021/12/np_file_130786.jpeg" />
-        <div class="card-trip-infos">
-          <div>
-            <h2><%= link_to "Vladimir Putin", politician_path(6) %></h2>
-            <p>Hide money!</p>
-          </div>
-          <h2 class="card-trip-pricing">€ 99.99</h2>
-        </div>
-      </div>
-
-    </div>
 
   </div>
 </div>
