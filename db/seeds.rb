@@ -7,7 +7,6 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts "Destroy everything"
 Politician.destroy_all
-Availability.destroy_all
 puts "All is destroyed!"
 
 puts 'Creating politicians....'
@@ -22,12 +21,6 @@ trump = Politician.create(
   price: 50
 )
 
-Availability.create(
-  start_time: '2022-6-1',
-  end_time: '2022-10-3',
-  politician: trump
-)
-
 putin = Politician.create(
   full_name: 'Vladimir Putin',
   age: 69,
@@ -37,12 +30,6 @@ putin = Politician.create(
   reach: 'International',
   location: 'Moscow, Russia',
   price: 5000
-)
-
-Availability.create(
-  start_time: '2022-2-28',
-  end_time: '2022-8-30',
-  politician: putin
 )
 
 bolsonaro = Politician.create(
@@ -56,12 +43,6 @@ bolsonaro = Politician.create(
   price: 100,
 )
 
-Availability.create(
-  start_time: '2022-2-14',
-  end_time: '2022-7-5',
-  politician: bolsonaro
-)
-
 merkel = Politician.create(
   full_name: 'Angela Merkel',
   age: 67,
@@ -71,12 +52,6 @@ merkel = Politician.create(
   reach: 'Europe',
   location: 'Berlin, Germany',
   price: 7000
-)
-
-Availability.create(
-  start_time: '2022-6-1',
-  end_time: '2022-12-12',
-  politician: merkel
 )
 
 berlusconi = Politician.create(
@@ -90,12 +65,6 @@ berlusconi = Politician.create(
   price: 10
 )
 
-Availability.create(
-  start_time: '2022-1-1',
-  end_time: '2022-8-8',
-  politician: berlusconi
-)
-
 rashid = Politician.create(
   full_name: 'Mohammed bin Rashid Al Maktoum',
   age: 72,
@@ -105,12 +74,6 @@ rashid = Politician.create(
   reach: 'Western Asia',
   location: 'Dubai, UAE',
   price: 7000
-)
-
-Availability.create(
-  start_time: '2022-4-1',
-  end_time: '2022-7-30',
-  politician: rashid
 )
 
 mohammed = Politician.create(
@@ -124,12 +87,6 @@ mohammed = Politician.create(
   price: 5000
 )
 
-Availability.create(
-  start_time: '2022-1-1',
-  end_time: '2022-12-11',
-  politician: mohammed
-)
-
 arden = Politician.create(
   full_name: 'Jacinda Arden',
   age: 41,
@@ -140,11 +97,4 @@ arden = Politician.create(
   location: 'Wellington, New Zealand',
   price: 500
 )
-
-Availability.create(
-  start_time: '2022-1-15',
-  end_time: '2022-10-3',
-  politician: arden
-)
-
   puts "All is created!"
