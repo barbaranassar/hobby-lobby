@@ -6,6 +6,7 @@ class User < ApplicationRecord
   has_many :bookmarks
   has_many :ratings
   has_many :bookings
+  has_one_attached :photo
 
   validates :full_name, presence: true
 end
