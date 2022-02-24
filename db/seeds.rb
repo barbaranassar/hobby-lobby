@@ -18,7 +18,7 @@ trump = Politician.create(
   skills: 'Bribing, Stealing',
   reach: 'International',
   location: 'Florida, US',
-  price: 50
+  price: 50,
   photo_url: 'https://www.merkur.de/bilder/2022/02/23/91366621/28300681-donald-trump-rfe.jpg'
 )
 
@@ -30,7 +30,7 @@ putin = Politician.create(
   skills: 'Silencing critics, Actions in the West, Supreme tactician',
   reach: 'International',
   location: 'Moscow, Russia',
-  price: 5000
+  price: 5000,
   photo_url: 'https://cdn-japantimes.com/wp-content/uploads/2021/12/np_file_130786.jpeg'
 )
 
@@ -54,7 +54,7 @@ merkel = Politician.create(
   skills: 'Someone who does not flinch, Extraordinary influence, Master lead',
   reach: 'Europe',
   location: 'Berlin, Germany',
-  price: 7000
+  price: 7000,
   photo_url: 'https://media0.faz.net/ppmedia/aktuell/gesellschaft/2487125949/1.7823408/mmobject-still_full/die-frau-die-immer-recht-hatte.jpg'
 )
 
@@ -66,7 +66,7 @@ berlusconi = Politician.create(
   skills: 'Super salesman, Tax evasion , Bribe lawyer',
   reach: 'Europe',
   location: 'Rome, Italy',
-  price: 10
+  price: 10,
   photo_url: 'https://image.stern.de/31561508/t/hS/v2/w1440/r1.7778/-/22--italiens-exregierungschef-silvio-berlusconi---f1de643d65ea9fbe.jpg'
 )
 
@@ -78,7 +78,7 @@ rashid = Politician.create(
   skills: 'Entrepreneurship, Public relations, Visionary',
   reach: 'Western Asia',
   location: 'Dubai, UAE',
-  price: 7000
+  price: 7000,
   photo_url: 'https://idsb.tmgrup.com.tr/ly/uploads/images/2020/03/05/23838.jpg'
 )
 
@@ -90,7 +90,7 @@ mohammed = Politician.create(
   skills: 'Financial management, Investing, Visionary',
   reach: 'Western Asia',
   location: 'Dubai, UAE',
-  price: 5000
+  price: 5000,
   photo_url: 'https://en.qantara.de/sites/default/files/uploads/2016/06/29/dubaiskronprinzhamdanbinmuhammadalmaktum.jpg'
 )
 
@@ -102,7 +102,7 @@ arden = Politician.create(
   skills: 'Honesty, Agility, Empathy',
   reach: 'South Pacific Ocean',
   location: 'Wellington, New Zealand',
-  price: 500
+  price: 500,
   photo_url: 'https://assets.deutschlandfunk.de/FILE_c192631a9d856b505405791e5eba915a/1280x720.jpg?t=1603448265960'
 )
   puts "All is created!"
