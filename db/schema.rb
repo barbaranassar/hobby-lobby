@@ -12,6 +12,8 @@
 
 ActiveRecord::Schema.define(version: 2022_02_24_130953) do
 
+
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -50,6 +52,7 @@ ActiveRecord::Schema.define(version: 2022_02_24_130953) do
     t.datetime "updated_at", precision: 6, null: false
     t.bigint "booking_id"
     t.index ["booking_id"], name: "index_politicians_on_booking_id"
+    t.string "photo_url"
   end
 
   create_table "ratings", force: :cascade do |t|

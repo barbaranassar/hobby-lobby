@@ -13,7 +13,32 @@
 
 <div class="section mt-4 ">
   <div class="row">
-    <div class="col">
+
+    <% @politicians.each do |politician| %>
+
+      <div class="col-12 col-md-4 mb-3">
+
+        <div class="card-trip">
+          <img src="https://www.merkur.de/bilder/2022/02/23/91366621/28300681-donald-trump-rfe.jpg" />
+          <div class="card-trip-infos">
+            <div>
+              <h2><%= link_to politician.full_name, politician_path(1) %></h2>
+              <p><strong>Expertise:</strong> <%= politician.expertise %></p>
+            </div>
+            <h2 class="card-trip-pricing">€ 99.99</h2>
+          </div>
+        </div>
+
+      </div>
+    <% end %>
+
+  </div>
+</div>
+
+
+<div class="section mt-4 ">
+  <div class="row">
+    <div class="col-12 col-md-4 mb-3">
 
       <div class="card-trip">
         <img src="https://www.merkur.de/bilder/2022/02/23/91366621/28300681-donald-trump-rfe.jpg" />
@@ -27,7 +52,7 @@
       </div>
 
     </div>
-    <div class="col">
+    <div class="col-12 col-md-4">
 
       <div class="card-trip">
         <img src="https://m.faz.net/media0/ppmedia/aktuell/gesellschaft/2487125949/1.7823408/mmobject-still_full/die-frau-die-immer-recht-hatte.jpg" />
@@ -58,9 +83,3 @@
 
   </div>
 </div>
-
-
-  <%# <% @politicians.each do |politician| %>
-  <%# <br><%= link_to politician.full_name, politician %>
-  <%# <% end %>
-  <%# <br> %>
