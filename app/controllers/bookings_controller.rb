@@ -23,8 +23,7 @@ class BookingsController < ApplicationController
     if @booking.save
       redirect_to politician_booking_congratulations_path(@politician, @booking)
     else
-      raise
-      render :new
+      render :new, notice: "Please log in or sign up."
     end
   end
 
