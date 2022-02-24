@@ -1,6 +1,14 @@
 class PoliticiansController < ApplicationController
   def index
-    @politicians = Politician.all
+    if params[:filter] == "age"
+      @politicians = Politician.all.order(:age)
+    elsif params[:filter] == "price"
+      @politicians = Politician.all.order(:price)
+    elsif params[:filter] == "location"
+      @politicians = Politician.all.order(:location)
+    else
+      @politicians = Politician.all
+    end
   end
 
   def show

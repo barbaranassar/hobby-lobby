@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
-  def home
+  def dashboard
+    @user = current_user
+    @bookings = @user.bookings
+    @bookmarks = @user.bookmarks
   end
 
-  def congratulations
-  end
 end
