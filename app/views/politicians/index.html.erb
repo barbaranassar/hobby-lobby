@@ -1,15 +1,16 @@
-<div class="section d-flex flex-row">
-
+<div class="section">
       <%= form_tag politicians_path, method: :get do %>
-        <div>
-          <%= text_field_tag :query,
-            params[:query],
-            class: "form-control",
-            placeholder: "Find a Politician"
-          %>
-        </div>
-        <div>
+        <div class="d-flex justify-content-around align-items-center filter">
+          <div class="flex-grow-1 pe-4">
+            <%= text_field_tag :query,
+              params[:query],
+              class: "form-control",
+              placeholder: "Find a Politician"
+            %>
+          </div>
+          <div class="">
           <%= submit_tag "Search", class: "btn btn-gray-square" %>
+          </div>
         </div>
       <% end %>
 
@@ -17,10 +18,10 @@
 
 
 <div class="row section-fullsize">
-    <div class="col-12 col-md-6 imgsector-background" style="background-image: url(https://i.pinimg.com/originals/ec/39/81/ec3981a1796a6731edce52ef29b2942c.png)">
+    <div class="col-12 col-md-6 imgsector-background" style="background-image: url(http://www.avishek.asia/seo-blog/wp-content/uploads/2018/12/google-maps-world-smartsync-at-for-google-world-map.jpg)">
     </div>
   <div class="col-12 col-md-6 box">
-      <h2>Are you looking for something special?</h2>
+      <h2>Are you looking for something special? Order them</h2>
       <p>You can check all our politicians by order of preference. Do you want to look by location? Just click in
          the filter below!</p>
       <div class="d-flex flex-wrap justify-content-start">

@@ -1,17 +1,14 @@
 class PoliticiansController < ApplicationController
   def index
+
+    # raise
     if params[:filter] == "age"
       @politicians = Politician.all.order(:age)
     elsif params[:filter] == "price"
       @politicians = Politician.all.order(:price)
     elsif params[:filter] == "location"
       @politicians = Politician.all.order(:location)
-    else
-      @politicians = Politician.all
-    end
-
-
-    if params[:query].present?
+    elsif params[:query].present?
       sql_query = " \
         politicians.full_name @@ :query \
         OR politicians.skills @@ :query \
@@ -22,6 +19,9 @@ class PoliticiansController < ApplicationController
     else
       @politicians = Politician.all
     end
+
+
+
 
   end
 

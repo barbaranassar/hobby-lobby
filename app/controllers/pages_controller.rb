@@ -4,5 +4,4 @@ class PagesController < ApplicationController
     @bookings = @user.bookings
     @bookmarks = @user.bookmarks
   end
-
 end
