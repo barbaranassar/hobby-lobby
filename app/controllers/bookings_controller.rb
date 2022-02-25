@@ -9,8 +9,12 @@ class BookingsController < ApplicationController
   end
 
   def new
-    @booking = Booking.new
-    @politician = Politician.find(params[:politician_id])
+    if user_signed_in?
+      @booking = Booking.new
+      @politician = Politician.find(params[:politician_id])
+    else
+      redirect_to new_user_registration_path, notice: "Please log in or sign up."
+    end
   end
 
   def create
