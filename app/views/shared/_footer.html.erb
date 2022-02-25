@@ -1,43 +1,35 @@
-
-
-
-
-  <div class="footer d-flex justify-content-between">
-
+ <div class="footer">
+  <div class="footer-section">
+  <div class="d-flex justify-content-between py-4"
+  >
       <div class="footer-links">
-        <%= link_to "Show All Politicians", politicians_path, class: "btn btn-grey-square" %>
           <div class="footer-copyright">
-            🩸💎🩸💎🩸💎 This Website is sponsored by 🩸blood diamonds💎 at Le Wagon😈 🩸💎🩸💎🩸💎
+            <h2>HobbyLobby</h2>
+            This Website is sponsored by 🩸blood diamonds💎 at Le Wagon😈 🩸💎🩸💎🩸💎
           </div>
       </div>
 
-
-
-
-       <div><h4> Sitemaps</h4>
-        <ul class="footer-links-right">
-          <li>
-          <%= link_to "/" do %>
-            Home
-          <% end %>
-          </li>
-          <li><%= link_to "/" do %>Features
-          <% end %>
-          </li>
-          <li><%= link_to "/" do %>
-           About Us
-          <% end %>
-          </li>
-        </ul>
+       <div>
+        <h4> Sitemaps</h4>
+          <ul class="footer-links-right">
+            <li>
+            <%= link_to "/" do %>
+              Home
+            <% end %>
+            </li>
+            <li><%= link_to politicians_path do %>Politicians
+            <% end %>
+            </li>
+          </ul>
       </div>
 
-      <div><h4> Advantages</h4>
+       <div>
+      <h4> Advantages</h4>
         <ul>
           <li>More Power</li>
           <li>Less Opposition</li>
-          <li>Obey!</li>
         </ul>
       </div>
 
-  </div>
+  </div>  </div></div>
 <div>
