@@ -9,6 +9,17 @@ class PoliticiansController < ApplicationController
     else
       @politicians = Politician.all
     end
+    if params[:query].present?
+      sql_query = " \
+        politicians.full_name @@ :query \
+        OR politicians.skills @@ :query \
+        OR politicians.expertise @@ :query \
+        OR politicians.location @@ :query \
+      "
+      @politicians = Politician.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @politicians = Politician.all
+    end
   end
 
   def show
