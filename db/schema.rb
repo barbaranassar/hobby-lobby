@@ -10,9 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-
 ActiveRecord::Schema.define(version: 2022_02_24_145049) do
-
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,7 +44,8 @@ ActiveRecord::Schema.define(version: 2022_02_24_145049) do
   end
 
   create_table "bookings", force: :cascade do |t|
-    t.string "date"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.string "topic"
     t.integer "price"
     t.bigint "politician_id", null: false
@@ -116,11 +115,8 @@ ActiveRecord::Schema.define(version: 2022_02_24_145049) do
   add_foreign_key "bookings", "politicians"
   add_foreign_key "bookings", "users"
   add_foreign_key "bookmarks", "politicians"
-
   add_foreign_key "bookmarks", "users"
-
   add_foreign_key "politicians", "bookings"
-
   add_foreign_key "ratings", "bookings"
   add_foreign_key "ratings", "politicians"
   add_foreign_key "ratings", "users"
