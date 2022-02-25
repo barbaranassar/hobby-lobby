@@ -58,6 +58,30 @@ berlusconi = Politician.create(
   photo_url: 'https://image.stern.de/31561508/t/hS/v2/w1440/r1.7778/-/22--italiens-exregierungschef-silvio-berlusconi---f1de643d65ea9fbe.jpg'
 )
 
+amthor = Politician.create(
+  full_name: 'Philipp Amthor',
+  age: 29,
+  biography: 'Philipp Amthor is a German politician of the Christian Democratic Union (CDU) who has been serving as a member of the Bundestag since the 2017 German federal election.',
+  expertise: 'Being the son-in-law really any mother would love to have',
+  skills: 'Working sneakily as a board member for Augustus Intelligence ',
+  reach: 'Germany',
+  location: 'Berlin, Germany',
+  price: 19,
+  photo_url: 'https://www.svz.de/img/mecklenburg-vorpommern/crop18154106/4237931063-cv16_9-w880/23-92731151-23-92731152-1508863513.jpg'
+)
+
+sarkozy = Politician.create(
+  full_name: 'Nicolas Sarkozy',
+  age: 67,
+  biography: 'Being defeated at the Republican presidential primary in 2016, he retired from public life. He was charged with corruption by French prosecutors in two cases, notably concerning the alleged Libyan interference in the 2007 French elections. In 2021, Sarkozy was convicted of corruption in two separate trials. His first conviction resulted in him receiving a sentence of three years, two of them suspended and one in prison; he has appealed against the ruling. For his second conviction, he received a one year sentence, which he is allowed to serve under home confinement.',
+  expertise: 'Because of extensive corruption going into isolation/lockdown before it was mainstream.',
+  skills: 'Charisma, Public relations, Visionary',
+  reach: 'International',
+  location: 'Paris, France',
+  price: 6000,
+  photo_url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Nicolas_Sarkozy_in_2010.jpg/440px-Nicolas_Sarkozy_in_2010.jpg'
+)
+
 rashid = Politician.create(
   full_name: 'Mohammed bin Rashid Al Maktoum',
   age: 72,
