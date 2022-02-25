@@ -41,7 +41,7 @@ class BookingsController < ApplicationController
   private
 
   def set_booking
-    @booking = Booking.where(user: current_user).find(params[:politician_id])
+    @booking = Booking.where(user: current_user).find(params[:booking_id])
   end
 
   def booking_params
