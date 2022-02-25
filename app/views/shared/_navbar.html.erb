@@ -7,22 +7,6 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-<div class="section d-flex flex-row">
-
-      <%= form_tag politicians_path, method: :get do %>
-        <div>
-          <%= text_field_tag :query,
-            params[:query],
-            class: "form-control",
-            placeholder: "Find a Politician"
-          %>
-        </div>
-        <div>
-          <%= submit_tag "Search", class: "btn btn-gray-square" %>
-        </div>
-      <% end %>
-
-  </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto">
