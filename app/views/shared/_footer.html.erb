@@ -1,14 +1,43 @@
-<div class="footer">
-  <div class="footer-links">
-    <%= link_to "Show All Politicians", politicians_path, class: "btn btn-dark" %>
 
-    <a href="#"><i class="fab fa-github"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-facebook"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+
+
+  <div class="footer d-flex justify-content-between">
+
+      <div class="footer-links">
+        <%= link_to "Show All Politicians", politicians_path, class: "btn btn-grey-square" %>
+          <div class="footer-copyright">
+            🩸💎🩸💎🩸💎 This Website is sponsored by 🩸blood diamonds💎 at Le Wagon😈 🩸💎🩸💎🩸💎
+          </div>
+      </div>
+
+
+
+
+       <div><h4> Sitemaps</h4>
+        <ul class="footer-links-right">
+          <li>
+          <%= link_to "/" do %>
+            Home
+          <% end %>
+          </li>
+          <li><%= link_to "/" do %>Features
+          <% end %>
+          </li>
+          <li><%= link_to "/" do %>
+           About Us
+          <% end %>
+          </li>
+        </ul>
+      </div>
+
+      <div><h4> Advantages</h4>
+        <ul>
+          <li>More Power</li>
+          <li>Less Opposition</li>
+          <li>Obey!</li>
+        </ul>
+      </div>
+
   </div>
-  <div class="footer-copyright">
-   🩸💎🩸💎🩸💎 This Website was paid by 🩸blood diamonds🩸 at Le Wagon😈 🩸💎🩸💎🩸💎
-  </div>
-</div>
+<div>
