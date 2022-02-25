@@ -1,6 +1,15 @@
 import { Controller } from "@hotwired/stimulus"
 import mapboxgl from "mapbox-gl"
 
+mapboxgl.accessToken = 'pk.eyJ1IjoiYWxvaGFubnUiLCJhIjoiY2wwMTc1cWs2MHJqMDNwcXBmb3NpN21xeSJ9.la0-gHyLW1ym7FIPRYrmZQ';
+const map = new mapboxgl.Map({
+    container: 'map', // container ID
+    style: 'mapbox://styles/mapbox/streets-v11', // style URL
+    center: [-74.5, 40], // starting position [lng, lat]
+    zoom: 9 // starting zoom
+});
+
+
 export default class extends Controller {
   static values = {
     apiKey: String,
@@ -17,7 +26,7 @@ export default class extends Controller {
   }
 }
 
-connect() {
+connect(),  {
   // [...]
   this.#addMarkersToMap()
 }
