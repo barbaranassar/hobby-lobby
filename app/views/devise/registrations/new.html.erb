@@ -1,8 +1,9 @@
-   <div class="section mt-3">
+<div class="container col-6">
+  <div class="section mt-3">
+  <div class="section mt-3">
   <h2 class="mb-4">Create your account and start bribing</h2>
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
-
     <div class="form-inputs">
     <div class="row">
       <%= f.input :full_name,
@@ -42,7 +43,8 @@
       <%= f.button :submit, "Sign up", class: "btn-gray" %>
     </div>
   <% end %>
-
   <br>
   <%= render "devise/shared/links" %>
+</div>
+</div>
 </div>
