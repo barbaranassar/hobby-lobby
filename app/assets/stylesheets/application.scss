@@ -36,7 +36,7 @@ p {
 }
 
 .section {
-  padding: 2rem 10% 2rem 8.5%;
+  padding: 2rem 10% 1rem 8.5%;
 }
 
 #page-container {
@@ -46,4 +46,8 @@ p {
 
 #content-wrap {
   padding-bottom: 5rem;    /* Footer height */
+}
+
+.filter {
+  padding: 0 10rem;
 }
