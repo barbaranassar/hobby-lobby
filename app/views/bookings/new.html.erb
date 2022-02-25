@@ -1,6 +1,5 @@
-<div class="section">
-  <div class="row justify-content-center">
-    <div class="col-sm-8">
+<div class="container col-4">
+  <div class="section mt-3">
     <h1>New Booking for <%= @politician.full_name %></h1>
     <%= simple_form_for [@politician, @booking] do |t| %>
     <%= t.input :start_date, as: :date, html5: true, input_html: {class: "datepicker"} %>
@@ -11,7 +10,6 @@
       <%= link_to "Go back", politician_path(@politician), class: "btn-gray-square" %>
     </div>
     <% end %>
-
 
     </div>
   </div>
