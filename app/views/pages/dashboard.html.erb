@@ -8,7 +8,8 @@
     <li>
       <p><%= booking.politician.full_name %></p>
       <% days = booking.end_date - booking.start_date %>
-      <p>In total<strong> <%= duration = (days / 24 / 60 / 60).to_i %> </strong>days from <em><%= booking.start_date.strftime("%m.%d.%Y") %> </em>until <em><%= booking.end_date.strftime("%m.%d.%Y") %></em></p>
+      <p>In total<strong> <%
+      = duration = (days / 24 / 60 / 60).to_i %> </strong>days from <em><%= booking.start_date.strftime("%m.%d.%Y") %> </em>until <em><%= booking.end_date.strftime("%m.%d.%Y") %></em></p>
       <p><strong>What will be dealt with:</strong> <%= booking.topic %></p>
       <p>Total cost: <strong><%= booking.politician.price * duration %>,- € </strong></p>
     </li>
