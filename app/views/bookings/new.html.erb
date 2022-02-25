@@ -5,8 +5,12 @@
     <%= t.input :start_date, as: :date, html5: true, input_html: {class: "datepicker"} %>
     <%= t.input :end_date, as: :date, html5: true, input_html: {class: "datepicker"} %>
     <%= t.input :topic %>
-    <%= t.submit %>
+    <div class="mt-5 d-flex justify-content-between ">
+      <%= t.submit class: "btn-gray-square" %>
+      <%= link_to "Go back", politician_path(@politician), class: "btn-gray-square" %>
+    </div>
     <% end %>
-    <%= link_to "Go back", politician_path(@politician), class: "btn btn-dark" %>
+
+    </div>
   </div>
 </div>
