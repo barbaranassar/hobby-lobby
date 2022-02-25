@@ -22,18 +22,6 @@ trump = Politician.create(
   photo_url: 'https://www.merkur.de/bilder/2022/02/23/91366621/28300681-donald-trump-rfe.jpg'
 )
 
-putin = Politician.create(
-  full_name: 'Vladimir Putin',
-  age: 69,
-  biography: 'Russian President Vladimir Putin has managed to wage a global charm offensive, even while supporting a number of actions that have drawn world criticism, including sponsored assassination, hacking of web sites in western Europe, and election interference.',
-  expertise: 'How to hide the extra houses you buy with your own people money',
-  skills: 'Silencing critics, Actions in the West, Supreme tactician',
-  reach: 'International',
-  location: 'Moscow, Russia',
-  price: 5000,
-  photo_url: 'https://cdn-japantimes.com/wp-content/uploads/2021/12/np_file_130786.jpeg'
-)
-
 bolsonaro = Politician.create(
   full_name: 'Jair Bolsonaro',
   age: 66,
