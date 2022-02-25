@@ -44,7 +44,8 @@ ActiveRecord::Schema.define(version: 2022_02_24_145049) do
   end
 
   create_table "bookings", force: :cascade do |t|
-    t.string "date"
+    t.datetime "start_date"
+    t.datetime "end_date"
     t.string "topic"
     t.integer "price"
     t.bigint "politician_id", null: false
