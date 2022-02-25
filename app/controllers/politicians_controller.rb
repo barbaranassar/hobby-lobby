@@ -9,6 +9,8 @@ class PoliticiansController < ApplicationController
     else
       @politicians = Politician.all
     end
+
+
     if params[:query].present?
       sql_query = " \
         politicians.full_name @@ :query \
@@ -20,6 +22,7 @@ class PoliticiansController < ApplicationController
     else
       @politicians = Politician.all
     end
+
   end
 
   def show
