@@ -1,4 +1,4 @@
-<div class="section mt-3">
+   <div class="section mt-3">
   <h2 class="mb-4">Create your account and start bribing</h2>
   <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
     <%= f.error_notification %>
@@ -33,7 +33,7 @@
                   required: true,
                   input_html: { autocomplete: "new-password" } %>
       </div>
-
+   <%= f.input :photo, as: :file %>
     </div>
     </div>
 
