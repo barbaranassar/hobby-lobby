@@ -26,7 +26,7 @@
 
       <div class="d-flex flex-wrap justify-content-start">
 
-        <%= link_to "Price", politicians_path(filter: "price"), class: "btn-border-gray" %>
+        <%= link_to "Price", politicians_path(filter: "price", politicians: @politicians), class: "btn-border-gray" %>
         <%= link_to "Age", politicians_path(filter: "age"), class: "btn-border-gray" %>
         <%= link_to "Location", politicians_path(filter: "location"), class: "btn-border-gray" %>
       </div>

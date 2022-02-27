@@ -2,8 +2,6 @@ class PoliticiansController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-
-    # raise
     if params[:filter] == "age"
       @politicians = Politician.all.order(:age)
     elsif params[:filter] == "price"
@@ -18,6 +16,8 @@ class PoliticiansController < ApplicationController
         OR politicians.location @@ :query \
       "
       @politicians = Politician.where(sql_query, query: "%#{params[:query]}%")
+
+      raise
     else
       @politicians = Politician.all
     end
