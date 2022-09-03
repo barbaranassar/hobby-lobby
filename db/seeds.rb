@@ -67,7 +67,7 @@ amthor = Politician.create(
   reach: 'Germany',
   location: 'Berlin, Germany',
   price: 19,
-  photo_url: 'https://www.svz.de/img/mecklenburg-vorpommern/crop18154106/4237931063-cv16_9-w880/23-92731151-23-92731152-1508863513.jpg'
+  photo_url: 'https://cdn.prod.www.spiegel.de/images/e94c4a4d-e622-4243-b8d3-c3d1982a6f39_w1280_r1.77_fpx39_fpy16.jpg'
 )
 
 sarkozy = Politician.create(
