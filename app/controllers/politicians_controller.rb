@@ -2,8 +2,6 @@ class PoliticiansController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
   def index
-
-    # raise
     if params[:filter] == "age"
       @politicians = Politician.all.order(:age)
     elsif params[:filter] == "price"
@@ -22,9 +20,12 @@ class PoliticiansController < ApplicationController
       @politicians = Politician.all
     end
 
-
-
-
+    @markers = @politicians.geocoded.map do |flat|
+      {
+        lat: flat.latitude,
+        lng: flat.longitude
+      }
+    end
   end
 
   def show
