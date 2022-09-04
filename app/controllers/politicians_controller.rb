@@ -20,10 +20,11 @@ class PoliticiansController < ApplicationController
       @politicians = Politician.all
     end
 
-    @markers = @politicians.geocoded.map do |flat|
+    @markers = @politicians.geocoded.map do |politician|
       {
-        lat: flat.latitude,
-        lng: flat.longitude
+        lat: politician.latitude,
+        lng: politician.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { politician: politician })
       }
     end
   end
