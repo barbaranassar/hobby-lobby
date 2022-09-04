@@ -13,13 +13,16 @@
           </div>
         </div>
       <% end %>
-
   </div>
 
-
 <div class="row section-fullsize">
-    <div class="col-12 col-md-6 imgsector-background" style="background-image: url(http://www.avishek.asia/seo-blog/wp-content/uploads/2018/12/google-maps-world-smartsync-at-for-google-world-map.jpg)">
+    <div class="col-12 col-md-6 imgsector-background"
+        data-controller="map"
+        data-map-markers-value="<%= @markers.to_json %>"
+        data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>">
     </div>
+    <%# <div class="col-12 col-md-6 imgsector-background" style="background-image: url(http://www.avishek.asia/seo-blog/wp-content/uploads/2018/12/google-maps-world-smartsync-at-for-google-world-map.jpg)">
+    </div> %>
   <div class="col-12 col-md-6 box">
       <h2>Are you ready to find your special someone?</h2>
       <p>You can check all our politicians by order of preference. Do you want to look by location? Just use the filter below!</p>
